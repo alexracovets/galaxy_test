@@ -1,6 +1,7 @@
 "use client";
 
 import { AtomImage, AtomWrapper } from "@atoms";
+import { HeroInfo, HeroSearch } from "@molecules";
 
 export const Hero = () => {
     const heroImage = "/hero/background.png";
@@ -8,7 +9,8 @@ export const Hero = () => {
     return (
         <AtomWrapper variant="hero">
             <AtomImage src={heroImage} alt="Hero" variant="hero" />
-            <h2>Run Your Business</h2>
+            <HeroInfo />
+            <HeroSearch />
         </AtomWrapper>
     );
 };
