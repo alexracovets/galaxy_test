@@ -31,7 +31,7 @@ export const Header = () => {
             className="fixed top-0 left-0 right-0 z-50 w-full py-[21px]"
             initial={false}
             animate={{ y: isHidden ? "-100%" : 0 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
+            transition={{ type: "spring", stiffness: 220, damping: 28 }}
         >
             <Container>
                 <AtomWrapper variant="header_border">
