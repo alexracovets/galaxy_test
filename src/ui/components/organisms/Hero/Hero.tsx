@@ -7,10 +7,12 @@ export const Hero = () => {
     const heroImage = "/hero/background.png";
 
     return (
-        <AtomWrapper variant="hero">
-            <AtomImage src={heroImage} alt="Hero" variant="hero" />
-            <HeroInfo />
-            <HeroSearch />
+        <AtomWrapper variant="hero" asChild>
+            <section>
+                <AtomImage src={heroImage} alt="Hero" variant="hero" />
+                <HeroInfo />
+                <HeroSearch />
+            </section>
         </AtomWrapper>
     );
 };
