@@ -21,9 +21,13 @@ const variantAtomWrapper = cva('', {
             header_border: "p-[1px] rounded-full bg-[radial-gradient(circle,_rgba(255,255,255,0.7)_0%,_rgba(255,255,255,0)_100%)]",
             header_content: cn(
                 "grid grid-cols-[auto_1fr_auto] px-[20px] pl-[37px] py-[12px] items-center justify-center gap-x-[20px] rounded-full",
-                "bg-[linear-gradient(180deg,_rgba(255,255,255,0.57)_0%,_rgba(255,255,255,0)_100%)]"
+                "bg-linear-to-r from-white/70 to-white/0 backdrop-blur-md",
+                "data-[active=true]:to-white/70",
+                "transition-all duration-300 ease-in-out",
             ),
             header_navigation: "flex w-full items-center justify-center",
+            trusted_company: "flex flex-col gap-y-[19px] items-center justify-center",
+            trusted_company_list: "flex items-center justify-center gap-x-[80px] px-[40px] py-[35px]",
         },
     },
     defaultVariants: {

@@ -11,6 +11,7 @@ const variantAtomImage = cva("", {
         variant: {
             default: "w-full",
             hero: "w-full h-full absolute top-0 left-0 z-[-1]",
+            trusted_company_list_item: "w-auto h-auto",
         },
     },
     defaultVariants: {
@@ -26,7 +27,19 @@ export const AtomImage = ({
     className,
     noCover = false,
     unoptimized = true,
+    intrinsic = false,
 }: AtomImageType) => {
+    if (intrinsic) {
+        return (
+            <img
+                src={src || ""}
+                alt={alt || "image"}
+                loading={priority ? "eager" : "lazy"}
+                className={cn(variantAtomImage({ variant }), className)}
+            />
+        );
+    }
+
     return (
         <div className={cn("relative", variantAtomImage({ variant }), className)}>
             <Image

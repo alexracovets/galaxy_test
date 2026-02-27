@@ -14,6 +14,7 @@ const variantAtomText = cva('font-montserrat font-[400]', {
             hero_description: "text-[18px] text-base-white leading-[30px]",
             hero_search_description: "text-[16px] text-base-white leading-[30px] font-[400]",
             logo: "text-primary text-[30px] leading-[29px] tracking-[-0.9px] font-[700]",
+            h3: "text-[35px] leading-[50px] text-center text-base-black font-[600]",
         },
     },
     defaultVariants: {

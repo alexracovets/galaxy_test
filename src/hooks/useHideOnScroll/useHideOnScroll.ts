@@ -10,6 +10,7 @@ const useHideOnScroll = ({ offset = 0 }: UseHideOnScrollOptions = {}) => {
     const headerRef = useRef<HTMLElement>(null);
     const [headerHeight, setHeaderHeight] = useState(0);
     const [isHidden, setIsHidden] = useState(false);
+    const [hasHiddenOnce, setHasHiddenOnce] = useState(false);
 
     useEffect(() => {
         const updateHeight = () => {
@@ -25,17 +26,27 @@ const useHideOnScroll = ({ offset = 0 }: UseHideOnScrollOptions = {}) => {
     useMotionValueEvent(scrollY, "change", (value: number) => {
         const previous = scrollY.getPrevious() ?? 0;
         const isScrollingDown = value > previous;
-        const passedHeader = value > headerHeight + offset;
+        const threshold = Math.max(headerHeight, offset);
+        const passedHeader = value > threshold;
 
         if (!passedHeader) {
+            setHasHiddenOnce(false);
             setIsHidden(false);
             return;
         }
 
-        setIsHidden(isScrollingDown);
+        if (isScrollingDown) {
+            setHasHiddenOnce(true);
+            setIsHidden(true);
+            return;
+        }
+
+        setIsHidden(false);
     });
 
-    return { headerRef, isHidden };
+    const isActive = hasHiddenOnce && !isHidden;
+
+    return { headerRef, isHidden, isActive };
 };
 
 export { useHideOnScroll };

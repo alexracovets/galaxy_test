@@ -6,10 +6,11 @@
   --font-montserrat: var(--font-montserrat);
 
   --color-base-white: #ffffff;
+  --color-base-black: #231f20;
   --color-primary: #1e1e1e;
   --color-brand: #3276fa;
   --color-foreground: #18181b;
-  --color-foreground-active: #0935FE;
+  --color-foreground-active: #0935fe;
 }
 
 .brand-circle {

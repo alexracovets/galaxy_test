@@ -11,4 +11,5 @@ export interface AtomImageType {
     className?: string;
     noCover?: boolean;
     unoptimized?: boolean;
+    intrinsic?: boolean;
 }

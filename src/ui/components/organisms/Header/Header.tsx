@@ -23,7 +23,7 @@ const navigation = [
 ];
 
 export const Header = () => {
-    const { headerRef, isHidden } = useHideOnScroll({ offset: 50 });
+    const { headerRef, isHidden, isActive } = useHideOnScroll({ offset: 50 });
 
     return (
         <motion.header
@@ -35,7 +35,12 @@ export const Header = () => {
         >
             <Container>
                 <AtomWrapper variant="header_border">
-                    <AtomWrapper variant="header_content">
+                    <AtomWrapper variant="header_content" data-active={isActive}>
+                        <span
+                            aria-hidden="true"
+                            data-active={isActive}
+                            className="pointer-events-none absolute inset-0 rounded-full bg-linear-to-r from-white/70 to-white/70 opacity-0 transition-opacity duration-300 ease-in-out data-[active=true]:opacity-100 z-[-1]"
+                        />
                         <Logo />
                         <HeaderNavigation navigation={navigation} />
                         <AuthUser />
