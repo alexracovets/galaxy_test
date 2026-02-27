@@ -28,6 +28,7 @@
       "@templates": ["./src/ui/components/templates"],
       "@pages": ["./src/ui/components/pages"],
       "@types": ["./src/ui/types"],
+      "@utils": ["./src/utils"],
     }
   },
   "include": [

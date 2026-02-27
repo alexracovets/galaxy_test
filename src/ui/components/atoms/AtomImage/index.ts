@@ -1,0 +1,1 @@
+export { AtomImage, variantAtomImage } from "./AtomImage";
