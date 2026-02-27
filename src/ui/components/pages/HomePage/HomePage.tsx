@@ -1,11 +1,12 @@
 "use client";
 
-import { TrustedCompany } from "@organisms";
+import { ContractPosts, TrustedCompany } from "@organisms";
 
 export const HomePage = () => {
     return (
         <>
             <TrustedCompany />
+            <ContractPosts />
         </>
     );
 };

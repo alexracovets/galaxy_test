@@ -28,6 +28,7 @@ const variantAtomWrapper = cva('', {
             header_navigation: "flex w-full items-center justify-center",
             trusted_company: "flex flex-col gap-y-[19px] items-center justify-center",
             trusted_company_list: "flex items-center justify-center gap-x-[80px] px-[40px] py-[35px]",
+            section_info: "flex flex-col items-center justify-center",
         },
     },
     defaultVariants: {

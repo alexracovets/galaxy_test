@@ -1,0 +1,1 @@
+export { ContractPosts } from "./ContractPosts";
