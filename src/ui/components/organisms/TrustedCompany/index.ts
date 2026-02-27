@@ -1,0 +1,1 @@
+export { TrustedCompany } from "./TrustedCompany";

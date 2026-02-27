@@ -6,4 +6,15 @@
   --font-montserrat: var(--font-montserrat);
 
   --color-base-white: #ffffff;
+  --color-primary: #1e1e1e;
+  --color-brand: #3276fa;
+  --color-foreground: #18181b;
+  --color-foreground-active: #0935FE;
+}
+
+.brand-circle {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: conic-gradient(#3276fa 0deg 90deg, transparent 90deg 180deg, #3276fa 180deg 0deg);
 }

@@ -1,0 +1,1 @@
+export type { HeaderNavigationType } from "./HeaderNavigationType";

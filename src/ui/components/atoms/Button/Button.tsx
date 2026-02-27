@@ -7,7 +7,7 @@ import { cn } from "@utils";
 import { ButtonType } from "@types";
 
 const variantButton = cva(
-    "cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-full transition-transform duration-150 ease-out active:scale-95",
+    "cursor-pointer inline-flex items-center justify-center whitespace-nowrap rounded-full transition-transform duration-150 ease-out active:scale-95 will-change-transform",
     {
         variants: {
             variant: {

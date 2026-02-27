@@ -1,0 +1,1 @@
+export type { AtomLinkType } from "./AtomLinkType";
