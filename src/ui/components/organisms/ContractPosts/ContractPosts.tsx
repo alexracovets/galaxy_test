@@ -1,11 +1,12 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { ArrowRight, Clock } from "lucide-react";
 
 import { AtomImage, AtomText, AtomWrapper, Button, Container } from "@atoms";
+
+import { cn } from "@utils";
 import type { ContractsPayload } from "@types";
-import { ArrowRight, Clock } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 type ContractPostsProps = {
     data: ContractsPayload;
