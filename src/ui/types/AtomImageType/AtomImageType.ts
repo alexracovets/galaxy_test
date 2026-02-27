@@ -12,4 +12,7 @@ export interface AtomImageType {
     noCover?: boolean;
     unoptimized?: boolean;
     intrinsic?: boolean;
+    fill?: boolean;
+    width?: number;
+    height?: number;
 }

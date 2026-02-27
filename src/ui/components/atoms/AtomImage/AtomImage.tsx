@@ -12,6 +12,8 @@ const variantAtomImage = cva("", {
             default: "w-full",
             hero: "w-full h-full absolute top-0 left-0 z-[-1]",
             trusted_company_list_item: "w-auto h-auto",
+            contracts_posts_category: "w-[42px] h-[42px] &>img:p-[8px] object-contain bg-gradient-to-r from-[#3276FA] to-[#0026FF] rounded-full",
+            contracts_posts: "w-auto h-auto object-cover mb-[24px]",
         },
     },
     defaultVariants: {

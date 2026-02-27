@@ -1,12 +1,15 @@
-"use client";
-
 import { ContractPosts, TrustedCompany } from "@organisms";
+import type { ContractsPayload } from "@types";
 
-export const HomePage = () => {
+type HomePageProps = {
+    contractsData: ContractsPayload;
+};
+
+export const HomePage = ({ contractsData }: HomePageProps) => {
     return (
         <>
             <TrustedCompany />
-            <ContractPosts />
+            <ContractPosts data={contractsData} />
         </>
     );
 };

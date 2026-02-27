@@ -12,6 +12,9 @@
   --color-brand: #3276fa;
   --color-foreground: #18181b;
   --color-foreground-active: #0935fe;
+  --color-bage: #F6F6F6;
+  --color-bage-active: #1A51FC;
+  --color-bage-text: #27272A;
 }
 
 .brand-circle {
