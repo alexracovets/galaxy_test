@@ -8,7 +8,7 @@ export const Hero = () => {
 
     return (
         <AtomWrapper variant="hero" asChild>
-            <section>
+            <section id="home">
                 <AtomImage src={heroImage} alt="Hero" variant="hero" />
                 <HeroInfo />
                 <HeroSearch />

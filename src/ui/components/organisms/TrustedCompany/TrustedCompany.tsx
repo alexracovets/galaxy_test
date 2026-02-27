@@ -19,7 +19,7 @@ export const TrustedCompany = () => {
     return (
 
         <AtomWrapper variant="trusted_company" asChild>
-            <section>
+            <section id="how-it-works">
                 <Container>
                     <AtomText variant="h3" asChild>
                         <h3>{title}</h3>

@@ -17,6 +17,11 @@
   --color-bage-text: #27272A;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
 .brand-circle {
   width: 23px;
   height: 23px;
