@@ -2,7 +2,7 @@
 
 import { contractsData } from "@data";
 
-export const get_contracts = async () => {
+export const contracts_get = async () => {
     const baseUrl = process.env.NEXT_PUBLIC_API_URL;
 
     if (!baseUrl) {
@@ -11,9 +11,10 @@ export const get_contracts = async () => {
 
     try {
         const response = await fetch(`${baseUrl}/api/contracts`, {
-            method: "POST",
+            method: "GET",
         });
-        return await response.json();
+        const data = await response.json();
+        return data;
     } catch {
         return contractsData;
     }

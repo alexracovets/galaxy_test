@@ -1,1 +1,0 @@
-export { get_contracts } from "./get_contracts";

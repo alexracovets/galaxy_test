@@ -1,1 +1,0 @@
-export { search_hero } from "./search_hero";
