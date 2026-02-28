@@ -33,6 +33,7 @@
       "@api": ["./src/api"],
       "@prompts": ["./src/prompts"],
       "@data": ["./src/data"],
+      "@store": ["./src/store"],
     }
   },
   "include": [

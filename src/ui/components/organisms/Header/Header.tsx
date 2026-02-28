@@ -10,15 +10,18 @@ import { useHideOnScroll } from "@hooks";
 const navigation = [
     {
         label: "Home",
-        href: "/#home",
+        href: "/",
+        hash: "home",
     },
     {
         label: "How It Works",
-        href: "/#how-it-works",
+        href: "/",
+        hash: "how-it-works",
     },
     {
         label: "Latest Contracts Post",
-        href: "/#latest-contracts",
+        href: "/",
+        hash: "latest-contracts",
     },
 ];
 

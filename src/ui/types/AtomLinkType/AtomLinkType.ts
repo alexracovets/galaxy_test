@@ -12,4 +12,5 @@ export interface AtomLinkType {
     target?: string
     onMouseEnter?: () => void
     onMouseLeave?: () => void
+    onClick?: (event: React.MouseEvent<HTMLAnchorElement>) => void
 }

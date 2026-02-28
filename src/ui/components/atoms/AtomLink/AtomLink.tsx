@@ -42,6 +42,7 @@ const AtomLink = ({
     target,
     onMouseEnter,
     onMouseLeave,
+    onClick,
     ...props
 }: AtomLinkType) => {
     return (
@@ -53,6 +54,8 @@ const AtomLink = ({
             rel={target === '_blank' ? 'noopener noreferrer' : undefined}
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            shallow={true}
+            onClick={onClick}
             {...props}
         >
             {children}
