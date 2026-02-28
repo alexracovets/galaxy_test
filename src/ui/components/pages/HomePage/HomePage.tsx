@@ -1,8 +1,8 @@
 import { ContractPosts, TrustedCompany } from "@organisms";
-import type { ContractsPayload } from "@types";
+import type { ContractsPayloadType } from "@types";
 
 type HomePageProps = {
-    contractsData: ContractsPayload;
+    contractsData: ContractsPayloadType;
 };
 
 export const HomePage = ({ contractsData }: HomePageProps) => {
