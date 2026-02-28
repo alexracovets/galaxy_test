@@ -4,7 +4,7 @@ import { AtomLink, AtomWrapper } from "@atoms";
 
 export const AuthUser = () => {
     return (
-        <AtomWrapper>
+        <AtomWrapper variant="auth_user">
             <AtomLink variant="auth_login" href="#login">
                 Login
             </AtomLink>

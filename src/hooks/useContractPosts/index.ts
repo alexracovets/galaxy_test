@@ -1,2 +1,1 @@
-export { useHideOnScroll } from "./useHideOnScroll";
 export { useContractPosts } from "./useContractPosts";

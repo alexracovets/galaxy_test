@@ -1,0 +1,1 @@
+export { buildSearchPrompt } from "./searchPost";

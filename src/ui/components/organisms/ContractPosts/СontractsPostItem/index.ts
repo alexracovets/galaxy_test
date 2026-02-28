@@ -1,0 +1,1 @@
+export { СontractsPostItem } from "./СontractsPostItem";

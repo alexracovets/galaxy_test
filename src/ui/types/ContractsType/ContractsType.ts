@@ -1,9 +1,9 @@
-export type ContractTag = {
+export type ContractTagType = {
     label: string;
     tone: "primary" | "success" | "info";
 };
 
-export type ContractItem = {
+export type ContractItemType = {
     id: string;
     company: string;
     companyInitials: string;
@@ -12,22 +12,22 @@ export type ContractItem = {
     amountPeriod: string;
     duration: string;
     category: string;
-    tags: ContractTag[];
+    tags: ContractTagType[];
     summary: string;
     verified: boolean;
     ctaLabel: string;
     image: string;
 };
 
-export type ContractCategory = {
+export type ContractCategoryType = {
     label: string;
     value: string;
     image?: string;
 };
 
-export type ContractsPayload = {
+export type ContractsPayloadType = {
     title: string;
     description: string;
-    categories: ContractCategory[];
-    contracts: ContractItem[];
+    categories: ContractCategoryType[];
+    contracts: ContractItemType[];
 };

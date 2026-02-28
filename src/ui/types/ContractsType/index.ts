@@ -1,1 +1,1 @@
-export type { ContractItem, ContractTag, ContractsPayload } from "./ContractsType";
+export type { ContractItemType, ContractTagType, ContractsPayloadType, ContractCategoryType } from "./ContractsType";
